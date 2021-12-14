@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    tools:context=".ScheduleFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:animateLayoutChanges="true"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:animateLayoutChanges="true">
+
+                    <TextView
+                        android:id="@+id/tv_device1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Device1"
+                        android:textColor="@color/text_grey"
+                        android:textSize="30sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/switch1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/switch1" />
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:splitTrack="true"
+                        android:text="Automate"
+                        android:textColor="#6C6C6C"
+                        android:textSize="14pt"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Turn ON At"
+                        android:textColor="@color/text_grey"
+                        app:layout_constraintBottom_toTopOf="@+id/tvShowTime11"
+                        app:layout_constraintStart_toStartOf="@+id/tvShowTime11" />
+
+                    <TextView
+                        android:id="@+id/tvoff1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Turn OFF At"
+                        android:textColor="@color/text_grey"
+                        app:layout_constraintBottom_toTopOf="@+id/tvShowTime12"
+                        app:layout_constraintStart_toStartOf="@+id/tvShowTime12" />
+
+                    <TextView
+                        android:id="@+id/tvShowTime11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:text="24:20"
+                        android:textColor="@color/text_grey"
+                        android:textSize="22pt"
+                        app:layout_constraintEnd_toStartOf="@+id/tvShowTime12"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+                    <TextView
+                        android:id="@+id/tvShowTime12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24:20"
+                        android:textColor="@color/text_grey"
+                        android:textSize="22pt"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/tvShowTime11"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/tvShowTime11" />
+
+                    <Switch
+                        android:id="@+id/sw_run1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Repeat"
+                        android:textColor="@color/text_grey"
+                        android:textSize="8pt"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvShowTime12" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:animateLayoutChanges="true">
+
+                    <TextView
+                        android:id="@+id/tv_device2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Device2"
+                        android:textColor="@color/text_grey"
+                        android:textSize="30sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/switch2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/switch2" />
+
+                    <Switch
+                        android:id="@+id/switch2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:splitTrack="true"
+                        android:text="Automate"
+                        android:textColor="#6C6C6C"
+                        android:textSize="14pt"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Turn ON At"
+                        android:textColor="@color/text_grey"
+                        app:layout_constraintBottom_toTopOf="@+id/tvShowTime21"
+                        app:layout_constraintStart_toStartOf="@+id/tvShowTime21" />
+
+                    <TextView
+                        android:id="@+id/tvoff2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Turn OFF At"
+                        android:textColor="@color/text_grey"
+                        app:layout_constraintBottom_toTopOf="@+id/tvShowTime22"
+                        app:layout_constraintStart_toStartOf="@+id/tvShowTime22" />
+
+                    <TextView
+                        android:id="@+id/tvShowTime21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:text="24:20"
+                        android:textColor="@color/text_grey"
+                        android:textSize="22pt"
+                        app:layout_constraintEnd_toStartOf="@+id/tvShowTime22"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/switch2" />
+
+                    <TextView
+                        android:id="@+id/tvShowTime22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24:20"
+                        android:textColor="@color/text_grey"
+                        android:textSize="22pt"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/tvShowTime21"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/tvShowTime21" />
+
+                    <Switch
+                        android:id="@+id/sw_run2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Repeat"
+                        android:textColor="@color/text_grey"
+                        android:textSize="8pt"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvShowTime22" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:animateLayoutChanges="true">
+
+                    <TextView
+                        android:id="@+id/tv_device3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Device3"
+                        android:textColor="@color/text_grey"
+                        android:textSize="30sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/switch3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/switch3" />
+
+                    <Switch
+                        android:id="@+id/switch3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:splitTrack="true"
+                        android:text="Automate"
+                        android:textColor="#6C6C6C"
+                        android:textSize="14pt"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvon3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Turn ON At"
+                        android:textColor="@color/text_grey"
+                        app:layout_constraintBottom_toTopOf="@+id/tvShowTime31"
+                        app:layout_constraintStart_toStartOf="@+id/tvShowTime31" />
+
+                    <TextView
+                        android:id="@+id/tvoff3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Turn OFF At"
+                        android:textColor="@color/text_grey"
+                        app:layout_constraintBottom_toTopOf="@+id/tvShowTime32"
+                        app:layout_constraintStart_toStartOf="@+id/tvShowTime32" />
+
+                    <TextView
+                        android:id="@+id/tvShowTime31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:text="24:20"
+                        android:textColor="@color/text_grey"
+                        android:textSize="22pt"
+                        app:layout_constraintEnd_toStartOf="@+id/tvShowTime32"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/switch3" />
+
+                    <TextView
+                        android:id="@+id/tvShowTime32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24:20"
+                        android:textColor="@color/text_grey"
+                        android:textSize="22pt"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/tvShowTime31"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/tvShowTime31" />
+
+                    <Switch
+                        android:id="@+id/sw_run3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Repeat"
+                        android:textColor="@color/text_grey"
+                        android:textSize="8pt"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvShowTime32" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="#F7F7F7"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:animateLayoutChanges="true">
+
+                    <TextView
+                        android:id="@+id/tv_device4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Device4"
+                        android:textColor="@color/text_grey"
+                        android:textSize="30sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/switch4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/switch4" />
+
+                    <Switch
+                        android:id="@+id/switch4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:splitTrack="true"
+                        android:text="Automate"
+                        android:textColor="#6C6C6C"
+                        android:textSize="14pt"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvon4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Turn ON At"
+                        android:textColor="@color/text_grey"
+                        app:layout_constraintBottom_toTopOf="@+id/tvShowTime41"
+                        app:layout_constraintStart_toStartOf="@+id/tvShowTime41" />
+
+                    <TextView
+                        android:id="@+id/tvoff4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Turn OFF At"
+                        android:textColor="@color/text_grey"
+                        app:layout_constraintBottom_toTopOf="@+id/tvShowTime42"
+                        app:layout_constraintStart_toStartOf="@+id/tvShowTime42" />
+
+                    <TextView
+                        android:id="@+id/tvShowTime41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:text="24:20"
+                        android:textColor="@color/text_grey"
+                        android:textSize="22pt"
+                        app:layout_constraintEnd_toStartOf="@+id/tvShowTime42"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/switch4" />
+
+                    <TextView
+                        android:id="@+id/tvShowTime42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24:20"
+                        android:textColor="@color/text_grey"
+                        android:textSize="22pt"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/tvShowTime41"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/tvShowTime41" />
+
+                    <Switch
+                        android:id="@+id/sw_run4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Repeat"
+                        android:textColor="@color/text_grey"
+                        android:textSize="8pt"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvShowTime42" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

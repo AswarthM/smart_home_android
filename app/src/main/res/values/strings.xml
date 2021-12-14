@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Smart Home</string>
+    <string name="width">100dp</string>
+    <string name="height">100dp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="page_names">
+        <item>Home</item>
+        <item>Devices</item>
+        <item>Camera</item>
+        <item>Schedule</item>
+    </string-array>
+
+
+    <string name="door_open">Opened</string>
+    <string name="door_closed">Closed</string>
+
+    <string name="intruders_detected">Intruders Detected</string>
+    <string name="no_intruders_detected">No Intruders Detected</string>
+
+    <string name="smoke_detected">Detected</string>
+    <string name="no_smoke_detected">Not Detected</string>
+    <string name="title_activity_loading">loading</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
