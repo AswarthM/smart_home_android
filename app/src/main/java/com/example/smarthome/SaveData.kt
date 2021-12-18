@@ -62,10 +62,10 @@ class SaveData {
             val pi = PendingIntent.getBroadcast(context, btn, intent, PendingIntent.FLAG_UPDATE_CURRENT)
             if(repeat == 1){
                 am.setRepeating(AlarmManager.RTC_WAKEUP, 5000, calendar.timeInMillis, pi)
-                Toast.makeText(context, "Runs Everyday", Toast.LENGTH_SHORT).show()
+                //Toast.makeText(context, "Runs Everyday", Toast.LENGTH_SHORT).show()
             }else{
                 am.setExact(AlarmManager.RTC_WAKEUP, calendar.timeInMillis, pi)
-                Toast.makeText(context, "Runs Once", Toast.LENGTH_SHORT).show()
+                //Toast.makeText(context, "Runs Once", Toast.LENGTH_SHORT).show()
             }
 
     }
