@@ -30,7 +30,7 @@ class updateDoor : Service() {
         return super.onStartCommand(intent, flags, startId)
     }
 
-    fun update(){
+    private fun update(){
         val database = Firebase.database.reference
 
         database.child("door").addValueEventListener(object : ValueEventListener {

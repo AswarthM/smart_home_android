@@ -1,5 +1,7 @@
 package com.example.smarthome
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.LayoutInflater
@@ -9,13 +11,16 @@ import androidx.fragment.app.DialogFragment
 import com.airbnb.lottie.LottieAnimationView
 
 
+
+
+
 class LoadingFragment: DialogFragment(){
 
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
-        var myView= inflater!!.inflate(R.layout.fragment_loading,container,false)
-        var lott = myView.findViewById<LottieAnimationView>(R.id.lottie_1)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        val myView= inflater!!.inflate(R.layout.fragment_loading,container,false)
+        val lott = myView.findViewById<LottieAnimationView>(R.id.lottie_1)
 
         lott.setAnimation("success-loading.json")
         lott.speed = 2F
@@ -33,6 +38,7 @@ class LoadingFragment: DialogFragment(){
         timer.start()
 
 
+        dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         return myView
     }
 

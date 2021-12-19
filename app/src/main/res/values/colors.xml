@@ -16,4 +16,5 @@
     <color name="text_green">#4CAF50</color>
     <color name="text_red">#F44336</color>
     <color name="text_black">#333333</color>
+    <color name="devices_color">#6c6c6c</color>
 </resources>

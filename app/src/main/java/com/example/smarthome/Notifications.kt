@@ -12,8 +12,8 @@ import androidx.core.app.NotificationCompat
 
 class  Notifications(){
 
-    private val NOTIFIYTAG="new request"
-    var notifTag = 0
+    //private val NOTIFIYTAG="new request"
+    //var notifTag = 0
     fun Notify(context: Context,message:String,number:Int){
         createNotificationChannel(context)
         val intent=Intent(context,MainActivity::class.java)

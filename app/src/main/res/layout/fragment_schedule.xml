@@ -40,9 +40,10 @@
                         android:id="@+id/tv_device1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Device1"
+                        android:text="@string/device_1"
+                        android:textAlignment="center"
                         android:textColor="@color/text_grey"
-                        android:textSize="30sp"
+                        android:textSize="@dimen/schedule_text_size"
                         app:layout_constraintBottom_toBottomOf="@+id/switch1"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/switch1" />
@@ -54,7 +55,7 @@
                         android:splitTrack="true"
                         android:text="Automate"
                         android:textColor="#6C6C6C"
-                        android:textSize="14pt"
+                        android:textSize="@dimen/schedule_text_size"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -139,9 +140,10 @@
                         android:id="@+id/tv_device2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Device2"
+                        android:text="@string/device_2"
+                        android:textAlignment="center"
                         android:textColor="@color/text_grey"
-                        android:textSize="30sp"
+                        android:textSize="@dimen/schedule_text_size"
                         app:layout_constraintBottom_toBottomOf="@+id/switch2"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/switch2" />
@@ -153,7 +155,7 @@
                         android:splitTrack="true"
                         android:text="Automate"
                         android:textColor="#6C6C6C"
-                        android:textSize="14pt"
+                        android:textSize="@dimen/schedule_text_size"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -238,12 +240,12 @@
                         android:id="@+id/tv_device3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Device3"
+                        android:text="@string/device_3"
+                        android:textAlignment="center"
                         android:textColor="@color/text_grey"
-                        android:textSize="30sp"
-                        app:layout_constraintBottom_toBottomOf="@+id/switch3"
+                        android:textSize="@dimen/schedule_text_size"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/switch3" />
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <Switch
                         android:id="@+id/switch3"
@@ -252,9 +254,10 @@
                         android:splitTrack="true"
                         android:text="Automate"
                         android:textColor="#6C6C6C"
-                        android:textSize="14pt"
+                        android:textSize="@dimen/schedule_text_size"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_device3"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="@+id/tv_device3" />
 
                     <TextView
                         android:id="@+id/tvon3"
@@ -337,12 +340,12 @@
                         android:id="@+id/tv_device4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Device4"
+                        android:text="@string/device_4"
+                        android:textAlignment="center"
                         android:textColor="@color/text_grey"
-                        android:textSize="30sp"
-                        app:layout_constraintBottom_toBottomOf="@+id/switch4"
+                        android:textSize="@dimen/schedule_text_size"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/switch4" />
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <Switch
                         android:id="@+id/switch4"
@@ -351,9 +354,10 @@
                         android:splitTrack="true"
                         android:text="Automate"
                         android:textColor="#6C6C6C"
-                        android:textSize="14pt"
+                        android:textSize="@dimen/schedule_text_size"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_device4"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="@+id/tv_device4" />
 
                     <TextView
                         android:id="@+id/tvon4"

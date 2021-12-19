@@ -16,9 +16,9 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var pageNamesArray: Array<String>
-    private val CODE_AUTHENTICATION_VERIFICATION = 241
+    private val authVerifyCode = 241
 
-    var pageChangeCallback = object : ViewPager2.OnPageChangeCallback() {
+    private var pageChangeCallback = object : ViewPager2.OnPageChangeCallback() {
         override fun onPageSelected(position: Int) {
             //Toast.makeText(this@MainActivity, "Selected position: $position", Toast.LENGTH_SHORT).show()
         }
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if(resultCode == RESULT_OK && requestCode == CODE_AUTHENTICATION_VERIFICATION){
+        if(resultCode == RESULT_OK && requestCode == authVerifyCode){
             Toast.makeText(applicationContext, "Authentication Successful", Toast.LENGTH_SHORT).show()
 
             pageNamesArray = resources.getStringArray(R.array.page_names)
@@ -66,12 +66,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun authenticate(){
+    private fun authenticate(){
         val km = applicationContext.getSystemService(Context.KEYGUARD_SERVICE) as KeyguardManager
 
         if(km.isDeviceSecure){
             val intent = km.createConfirmDeviceCredentialIntent("Authentication Required", " ")
-            startActivityForResult(intent, CODE_AUTHENTICATION_VERIFICATION)
+            startActivityForResult(intent, authVerifyCode)
         }else{
             Toast.makeText(applicationContext, "No Security Setup", Toast.LENGTH_SHORT).show()
         }

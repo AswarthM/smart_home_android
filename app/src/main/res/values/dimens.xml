@@ -6,5 +6,6 @@
     <dimen name="card_elevation">0dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="device_text_size">25sp</dimen>
+    <dimen name="schedule_text_size">25sp</dimen>
     <dimen name="device_icon_size">70dp</dimen>
 </resources>

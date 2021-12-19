@@ -26,10 +26,14 @@
         <entry key="..\:/Users/maswa/UserFiles/aswarth/AndroidStudioProjects/SmartHome/app/src/main/res/drawable/ic_gas_svgrepo_com.xml" value="0.2703125" />
         <entry key="..\:/Users/maswa/UserFiles/aswarth/AndroidStudioProjects/SmartHome/app/src/main/res/drawable/ic_lightbulb_solid.xml" value="0.2703125" />
         <entry key="..\:/Users/maswa/UserFiles/aswarth/AndroidStudioProjects/SmartHome/app/src/main/res/drawable/ic_lock_solid.xml" value="0.2703125" />
+        <entry key="..\:/Users/maswa/UserFiles/aswarth/AndroidStudioProjects/SmartHome/app/src/main/res/drawable/lock_open_solid.xml" value="0.2703125" />
+        <entry key="..\:/Users/maswa/UserFiles/aswarth/AndroidStudioProjects/SmartHome/app/src/main/res/drawable/unlock_solid.xml" value="0.2703125" />
         <entry key="..\:/Users/maswa/UserFiles/aswarth/AndroidStudioProjects/SmartHome/app/src/main/res/layout/activity_main.xml" value="0.11354166666666667" />
+        <entry key="..\:/Users/maswa/UserFiles/aswarth/AndroidStudioProjects/SmartHome/app/src/main/res/layout/fragment_camera.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/maswa/UserFiles/aswarth/AndroidStudioProjects/SmartHome/app/src/main/res/layout/fragment_devices.xml" value="0.264" />
         <entry key="..\:/Users/maswa/UserFiles/aswarth/AndroidStudioProjects/SmartHome/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/maswa/UserFiles/aswarth/AndroidStudioProjects/SmartHome/app/src/main/res/layout/fragment_schedule.xml" value="0.4" />
+        <entry key="..\:/Users/maswa/UserFiles/aswarth/AndroidStudioProjects/SmartHome/app/src/main/res/layout/fragment_loading.xml" value="0.13177083333333334" />
+        <entry key="..\:/Users/maswa/UserFiles/aswarth/AndroidStudioProjects/SmartHome/app/src/main/res/layout/fragment_schedule.xml" value="0.28892835997631733" />
       </map>
     </option>
   </component>

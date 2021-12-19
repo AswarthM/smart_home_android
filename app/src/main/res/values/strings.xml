@@ -20,6 +20,14 @@
 
     <string name="smoke_detected">Detected</string>
     <string name="no_smoke_detected">Not Detected</string>
+
+    <string name="device_1">Fan</string>
+    <string name="device_2">Geyser</string>
+    <string name="device_3">Living Room \nLight</string>
+    <string name="device_4">Bedroom \nLight</string>
+
+
+
     <string name="title_activity_loading">loading</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

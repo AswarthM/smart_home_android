@@ -13,10 +13,6 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.fragment_devices.card1
-import kotlinx.android.synthetic.main.fragment_devices.card2
-import kotlinx.android.synthetic.main.fragment_devices.card3
-import kotlinx.android.synthetic.main.fragment_devices.card4
 import kotlinx.android.synthetic.main.fragment_home.*
 
 private lateinit var database: DatabaseReference
@@ -25,10 +21,6 @@ lateinit var mContext: Context
 
 class HomeFragment : Fragment() {
 
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -69,6 +61,7 @@ class HomeFragment : Fragment() {
             }
         }
 
+/*
         card1.setOnClickListener {
             Log.i("MainActivity", "crd1 Clicked")
             database.child("Devices").child("Device1").get().addOnSuccessListener {
@@ -127,7 +120,8 @@ class HomeFragment : Fragment() {
                 }
                 showAnimation()
             }
-        }
+        }*/
+
     }
 
     private fun updateDoor(){
@@ -220,7 +214,7 @@ class HomeFragment : Fragment() {
         }
     }
 
-    fun showAnimation(){
+    private fun showAnimation(){
         val loading = LoadingFragment()
         fragmentManager?.let { loading.show(it, "Loading") }
     }

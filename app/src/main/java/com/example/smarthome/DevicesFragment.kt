@@ -105,7 +105,7 @@ class DevicesFragment : Fragment() {
         }
     }
 
-    fun showAnimation(){
+    private fun showAnimation(){
         val loading = LoadingFragment()
         fragmentManager?.let { loading.show(it, "Loading") }
     }
