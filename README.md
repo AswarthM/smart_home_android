@@ -10,5 +10,5 @@ It uses :
 - Services
 - Notification Manager
 - Broadcast Reciever
-- Biometrics for auth
-- SharedPrefs to store alarm data
+- Biometrics for Auth
+- SharedPrefs to Store Alarm Data
