@@ -13,8 +13,8 @@ import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
 import kotlinx.android.synthetic.main.fragment_schedule.*
 
-//////////TODO add cancel 4 +x alarm
-/////////DONE add door unlock, door status, gas and movement notification
+//////////TODO
+/////////DONE add door unlock, door status, gas and movement notification, add cancel 4 +x alarm
 var repeat1 = 0
 var repeat2 = 0
 var repeat3 = 0
