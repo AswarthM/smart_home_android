@@ -50,7 +50,7 @@ class updateDoor : Service() {
 
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 if(dataSnapshot.value.toString().equals("1")){
-                    Notifications().Notify(applicationContext, "Smoke Detected!!", 11)
+                    Notifications().Notify(applicationContext, "Gas Detected!!", 11)
                     //Toast.makeText(applicationContext, dataSnapshot.value.toString(), Toast.LENGTH_SHORT).show()
                 }
             }

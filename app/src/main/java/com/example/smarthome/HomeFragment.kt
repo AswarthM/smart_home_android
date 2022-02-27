@@ -1,11 +1,13 @@
 package com.example.smarthome
 
 import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -20,7 +22,6 @@ private lateinit var database: DatabaseReference
 lateinit var mContext: Context
 
 class HomeFragment : Fragment() {
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,6 +43,7 @@ class HomeFragment : Fragment() {
         updateIntruder()
         updateSmoke()
         updateLock()
+        updateTemp()
 
         card_lock.setOnClickListener{
             database.child("lock").get().addOnSuccessListener {
@@ -212,6 +214,24 @@ class HomeFragment : Fragment() {
                 iv_lock.setImageDrawable(resources.getDrawable(R.drawable.unlock_solid))
             }
         }
+    }
+
+    private fun updateTemp(){
+        Toast.makeText(getActivity(), "hlo", Toast.LENGTH_SHORT).show()
+
+        database.child("temp").addValueEventListener(object : ValueEventListener{
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                val text = dataSnapshot.value.toString().toFloat()
+                val temp = text.toInt().toString()
+                tv_temp_stat.text = "$temp °C"
+
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+
+        })
     }
 
     private fun showAnimation(){

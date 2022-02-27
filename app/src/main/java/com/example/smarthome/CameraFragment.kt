@@ -24,7 +24,8 @@ class CameraFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         //webView.loadUrl("http://192.168.1.14:8081")
 
-        webView.loadDataWithBaseURL(null, "<style>:root{ background-color: #E9E9E9;}img{border-radius: 10px; display: inline;height: auto;max-width: 100%;}</style> <img src = 192.168.1.14:8081>"  , "text/html", "UTF-8", null)
+        webView.loadDataWithBaseURL(null, "<style>:root{ background-color: #E9E9E9;}img{border-radius: 10px; display: inline;height: auto;max-width: 100%;}</style> <img src =http://192.168.1.14:8081>"  , "text/html", "UTF-8", null)
+        //webView.loadDataWithBaseURL(null, "<img src =http://kensri.in/assets/img/logo/KENSRI%20LOGO.png>"  , "text/html", "UTF-8", null)
 
     }
 
